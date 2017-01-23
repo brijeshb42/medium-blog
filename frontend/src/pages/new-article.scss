@@ -1,0 +1,85 @@
+.md-article-editor {
+    input[type="text"], textarea {
+        border: none;
+        padding: 0;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+.md-article-title {
+    font-size: 2em;
+    padding: 0;
+}
+
+.md-title-container, .md-summary-container {
+    position: relative;
+    margin: 5px 0;
+
+    label {
+        color: #ccc;
+        font-size: 2em;
+        position: absolute;
+        right: 102%;
+        padding-top: 10px;
+        margin-right: 5px;
+        transition: all 0.1s ease-in;
+    }
+}
+
+.md-summary-container {
+    label {
+        font-size: 1.2em;
+        padding-top: 3px;
+    }
+}
+
+
+.md-article-summary {
+    font-size: 1.4em;
+    color: #666;
+    padding: 0;
+    transition: none;
+}
+
+.ql-editor {
+    font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+    padding: 10px 0;
+    font-size: 1.2em;
+
+    &.ql-blank {
+        &::before {
+            color: rgba(0,0,0,0.3);
+            font-style: normal;
+            margin-top: 10px;
+        }
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin: 10px 0 10px 0;
+    }
+
+    ol, ul {
+        padding-left: 0px;
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.ql-bubble {
+    .ql-editor {
+        blockquote {
+            margin: 0;
+            box-shadow: none;
+            border-left: 4px solid #0074d9;
+            padding: 2px 0 3px 12px;
+        }
+    }
+}
